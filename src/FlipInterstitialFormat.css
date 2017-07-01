@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    overflow-y: scroll;
+    font-size: 100.01%
+}
+
+body {
+    background: #e3e3e3;
+    font-size: 62.5%
+}
+
+body,textarea,input,select,option,button {
+    color: #777;
+    font: 16px/1.375 Georgia,serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,ul,ol,dl,p,table,pre,h1,h2,h3,h4,h5,h6 {
+    display: block;
+    margin: 0 0 15px
+}
+
+:last-child {
+    margin-bottom: 0!important
+}
+
+.last-child {
+    margin-bottom: 0!important
+}
+
+.card-page {
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  width: 1280px;
+  height: 780px;
+  position: relative;
+  border: 1px solid #CCC;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+#flyover {
+	transition: all 2s ease-in-out;
+	position: absolute;
+	left: -20vw;
+}
+#webpageContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#webpageContainer.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+#webpageContainer .card-page {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  /* backface-visibility: hidden; */
+}
+
+#webpageContainer #front {
+  /*background: red;*/
+}
+
+#webpageContainer #back {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}

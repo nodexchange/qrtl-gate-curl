@@ -1,0 +1,55 @@
+<!-- Copyright 2012 AOL Advertising -->
+<!DOCTYPE html>
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+<head>
+    <meta charset="utf-8" />
+    <!-- disable zooming -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+    <title>Advert Example</title>
+    <script type="text/javascript" src="ADTECH.js"></script>
+    <script type="text/javascript" src="//aka-cdn-ns.adtech.de/rm/lib/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="FlipInterstitial.js"></script>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .svpContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2000;
+            display: block;
+        }
+
+        #flipInterstitialContainer {
+            width: 100%;
+            text-align: center;
+        }
+
+        #advertAssetContainer {
+            display: inline-block;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 3vw;
+            right: 10vw;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flipInterstitialContainer">
+        <div id="close-button" onclick="ADTECH.event('close_advert')">
+            <img src="close-button.png" alt="close-button" width=29 height=29></img>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1455 @@
+<!-- Copyright 2012 AOL Advertising -->
+<!DOCTYPE html>
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+<head>
+    <meta charset="utf-8" />
+    <!-- disable zooming -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+    <title>Advert Example</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .svpContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2000;
+            display: block;
+        }
+
+        #flipInterstitialContainer {
+            width: 100%;
+            text-align: center;
+        }
+
+        #advertAssetContainer {
+            display: inline-block;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 3vw;
+            right: 10vw;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flipInterstitialContainer">
+        <!-- One Creative creative: Curl.js customAd test(360584) - Flight: test321-(18216825) -->
+<script type="text/javascript">
+var com = {};
+com.adtech = {};
+                  adtechCanvasAdPreview = true;
+                  com.adtech.debugLogger_2_63_2 = com.adtech.debugLogger;
+
+
+    var rmLibVersion = '2.63.2'.split('.');
+    var rmlib_major_version = rmLibVersion[0];
+    var rmlib_minor_version = rmLibVersion[1];
+    var revision = rmLibVersion[2];
+                  var adtechAdConfig = {
+  "canvasId": 360584,
+  "liveStatsEnabled": false,
+  "servicesUrl": "http://canvas-services.adtech.de/",
+  "dynamic": false,
+  "productFamilyId": 0,
+  "formatId": 3,
+  "servicesHosts": {
+    "http": "http://ads.pictela.net/",
+    "https": "https://secure-ads.pictela.net/",
+    "post": "https://origin-ads.pictela.net/"
+  },
+  "adServerVars": {
+    "uid": "1498688517719",
+    "id": "360584",
+    "bannerId": "_ADBNID_",
+    "bannerUid": "_ADBNUID_",
+    "networkId": "_ADNETID_",
+    "subNetworkId": "_ADSUBNETID_",
+    "creativeId": "0",
+    "pageId": "_ADFC_PAGEID_",
+    "placementId": "_ADCUID_",
+    "adSize": "_ADFC_ADSIZE_",
+    "servingProto": "http",
+    "servingHost": "_ADVIRHOST_",
+    "sequenceId32": "_ADREFSEQUENCEID32_",
+    "sequenceId64": "_ADREFSEQUENCEID64_",
+    "secureAssetHost": "https://secure-ads.pictela.net/",
+    "configBaseURL": "_ADPATH_",
+    "assetBaseURL": "http://localhost:3000/src/",
+    "baseURL": "_ADPATH_",
+    "viewCounter": "_ADCOUNT_",
+    "campaignId": "_ADMCID_",
+    "publisherId": "_ADWEBSITEID_",
+    "externalId": "",
+    "advertiserId": 1841772,
+    "regionId": 1,
+    "iqRegionId": "eu"
+  },
+  "geoData": {
+    "area": "_ADAREATEXT_",
+    "city": "_ADCITYTEXT_",
+    "country": "_ADCOUNTRYTEXT_",
+    "state": "_ADSTATETEXT_",
+    "zip": "_ADZIPTEXT_"
+  },
+  "tagVars": {},
+  "preview": true,
+  "pubVars": {
+    "clickPixel": "",
+    "iframeBusterPath": "",
+    "clickRedirect": "",
+    "overflowFixLevel": "0",
+    "viewCountUrl": "",
+    "overrideX": "",
+    "overrideY": "",
+    "closeTimeout": "0"
+  },
+  "clickRedirect": "",
+  "assetContainers": {
+    "main": {
+      "type": "inlineDiv",
+      "width": 728,
+      "height": 90,
+      "contentWidth": 728,
+      "contentHeight": 90,
+      "contentWidthUnit": "px",
+      "contentHeightUnit": "px",
+      "xRel": "adSlotLeft",
+      "yRel": "adSlotTop",
+      "x": 0,
+      "y": 0,
+      "renderEvent": "serve",
+      "content": "main.html",
+      "contentType": "html",
+      "zIndex": 1,
+      "wmode": "opaque",
+      "pluginVersion": 0.0,
+      "contractedY": 0,
+      "contractedX": 0,
+      "contractedWidth": 728,
+      "contractedHeight": 90,
+      "isExpandable": false,
+      "startContracted": true,
+      "stickyX": false,
+      "stickyY": false,
+      "pushesContent": false,
+      "expandAnimationDuration": 0,
+      "contractAnimationDuration": 0,
+      "closeTimeout": 0,
+      "modal": false,
+      "sequence": 1,
+      "iframeBuster": "",
+      "langVersion": 0
+    }
+  },
+  "clickthroughs": {
+    "default": {
+      "id": 1008,
+      "plid": 23390516,
+      "dest": "",
+      "target": "_blank",
+      "features": ""
+    },
+    "backupImageClickthrough": {
+      "id": 7393,
+      "plid": 23390520,
+      "dest": "",
+      "target": "_blank",
+      "features": ""
+    },
+    "Clickthrough URL": {
+      "id": 18412,
+      "plid": 23398611,
+      "dest": "",
+      "target": "_blank",
+      "features": ""
+    },
+    "Wallpaper": {
+      "id": 150719,
+      "plid": 23399392,
+      "dest": "",
+      "target": "_blank",
+      "features": ""
+    }
+  },
+  "contentVariables": {
+    "Backup Alt Text": "test321 advertisement",
+    "QRUrl": "http://aol.it/2tkqItL"
+  },
+  "contentProperties": {
+    "Clickthrough URL": "http://www.adtech.com",
+    "Auto Scale Advert": false,
+    "Advert image or HTML file": "1366X76815.jpg",
+    "Video Player": {
+      "autoplay": true,
+      "video mp4": "",
+      "poster": "",
+      "left": 400,
+      "height": 300,
+      "top": 400,
+      "width": 500,
+      "size settings": "px",
+      "video webm": ""
+    },
+    "wallpaper": {
+      "clickthrough": "",
+      "fixed_rails": true,
+      "main": "",
+      "background": "#ffffff",
+      "placement": "default",
+      "logo_cap": "none",
+      "custom_css": "",
+      "alignment": "center",
+      "debug": false
+    },
+    "logos": [
+      {
+        "pos": "left",
+        "offset_x": 0,
+        "img": "",
+        "offset_y": 0,
+        "width": 0,
+        "fixed": false,
+        "height": 0,
+        "Tracking Id": "Item 1"
+      }
+    ],
+    "steps": {
+      "step_1152": "1264x754_Skin_AOL.jpg",
+      "step_942": "1264x754_Skin_AOL.jpg",
+      "step_836": "1264x754_Skin_AOL.jpg",
+      "step_1600": "1264x754_Skin_AOL.jpg",
+      "step_1264": "1264x754_Skin_AOL.jpg"
+    }
+  },
+  "adrConfig": {
+    "eventEndpoint": "http://eu.event.cmp.advertising.com/v2/events/"
+  },
+  "dataFeeds": {},
+  "screenGrabs": {},
+  "polls": {},
+  "assets": [
+    {
+      "id": "Backup image",
+      "name": "728x90.jpg",
+      "url": "728x90.jpg"
+    },
+    {
+      "id": "main",
+      "name": "main.html",
+      "url": "main.html"
+    },
+    {
+      "id": null,
+      "name": "customAd.js",
+      "url": "customAd.js"
+    },
+    {
+      "id": null,
+      "name": "ca-wallpaper.js",
+      "url": "ca-wallpaper.js"
+    },
+    {
+      "id": null,
+      "name": "FlipInterstitial.js",
+      "url": "FlipInterstitial.js"
+    },
+    {
+      "id": null,
+      "name": "close-button.png",
+      "url": "close-button.png"
+    },
+    {
+      "id": null,
+      "name": "1366X76815.jpg",
+      "url": "1366X76815.jpg"
+    },
+    {
+      "id": null,
+      "name": "ca-wallpaper-settings.js",
+      "url": "ca-wallpaper-settings.js"
+    },
+    {
+      "id": null,
+      "name": "ca-wallpaper-handlers.js",
+      "url": "ca-wallpaper-handlers.js"
+    },
+    {
+      "id": null,
+      "name": "ca-example-module.js",
+      "url": "ca-example-module.js"
+    },
+    {
+      "id": null,
+      "name": "ca-wallpaper-helpers.js",
+      "url": "ca-wallpaper-helpers.js"
+    },
+    {
+      "id": null,
+      "name": "ca-wallpaper-getters.js",
+      "url": "ca-wallpaper-getters.js"
+    }
+  ],
+  "events": [
+    {
+      "id": 1010,
+      "plid": 58144960,
+      "name": "engagement",
+      "cumulative": false,
+      "interaction": true,
+      "custom": false,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 21586,
+      "plid": 58144964,
+      "name": "interactiveImpression",
+      "cumulative": false,
+      "interaction": false,
+      "custom": false,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 7266,
+      "plid": 58144968,
+      "name": "viewableImpression",
+      "cumulative": false,
+      "interaction": false,
+      "custom": false,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 10836,
+      "plid": 58144972,
+      "name": "indeterminableViewability",
+      "cumulative": false,
+      "interaction": false,
+      "custom": false,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 23496,
+      "plid": 58144976,
+      "name": "backupView",
+      "cumulative": false,
+      "interaction": false,
+      "custom": false,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 11109,
+      "plid": 58144980,
+      "name": "backupViewableImpression",
+      "cumulative": false,
+      "interaction": false,
+      "custom": false,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 2424,
+      "plid": 58145192,
+      "name": "close",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 18413,
+      "plid": 58166243,
+      "name": "close_advert",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 26118,
+      "plid": 58166247,
+      "name": "Video Play",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 1588,
+      "plid": 58166251,
+      "name": "Video Start",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 1589,
+      "plid": 58166255,
+      "name": "Video First Quartile",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 1590,
+      "plid": 58166259,
+      "name": "Video Midpoint",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 1591,
+      "plid": 58166263,
+      "name": "Video Third Quartile",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 1592,
+      "plid": 58166267,
+      "name": "Video Complete",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 28772,
+      "plid": 58166271,
+      "name": "Video Mute",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 26119,
+      "plid": 58166275,
+      "name": "Video Unmute",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 28773,
+      "plid": 58166279,
+      "name": "Video Pause",
+      "cumulative": true,
+      "interaction": false,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 26120,
+      "plid": 58166283,
+      "name": "Video Replay",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 26121,
+      "plid": 58166287,
+      "name": "Video Resume",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 26122,
+      "plid": 58166291,
+      "name": "Video Seek",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 26123,
+      "plid": 58166295,
+      "name": "Video Fullscreen",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": true,
+      "isLoggable": true
+    },
+    {
+      "id": 150714,
+      "plid": 58167884,
+      "name": "wallpaper-click",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 150715,
+      "plid": 58167888,
+      "name": "header-click",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 150716,
+      "plid": 58167892,
+      "name": "rail-left-click",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 150717,
+      "plid": 58167896,
+      "name": "rail-right-click",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    },
+    {
+      "id": 150718,
+      "plid": 58167900,
+      "name": "rail-click",
+      "cumulative": true,
+      "interaction": true,
+      "custom": true,
+      "video": false,
+      "isLoggable": true
+    }
+  ],
+  "timers": [
+    {
+      "id": 1438,
+      "plid": 58144984,
+      "name": "displayTimer"
+    },
+    {
+      "id": 1439,
+      "plid": 58144988,
+      "name": "viewTimer"
+    },
+    {
+      "id": 1440,
+      "plid": 58144992,
+      "name": "engagementTimer"
+    },
+    {
+      "id": 23170,
+      "plid": 58144996,
+      "name": "interactionTimer"
+    },
+    {
+      "id": 3817,
+      "plid": 58166299,
+      "name": "Video View"
+    }
+  ],
+  "eventHandlers": [],
+  "thirdPartyTracking": [],
+  "contentHubConfig": {
+    "mapping": {},
+    "assets": {}
+  },
+  "fallback": "728x90.jpg"
+};
+
+
+/* CUSTOM AD */
+
+adtechAdConfig.preview = true;
+adtechAdConfig.overrides = adtechAdConfig.overrides || {};
+adtechAdConfig.overrides["displayWindowTarget"] = self;
+adtechAdConfig.assetContainers.main.renderEvent = '';
+adtechAdConfig.assetContainers.main.isExpandable = false;
+
+var adHeight = adtechAdConfig.assetContainers.main.contentHeight;
+var adWidth = adtechAdConfig.assetContainers.main.height;
+adtechAdConfig.assetContainers.main.contentHeight = 250;
+adtechAdConfig.assetContainers.main.height = 250;
+
+(function(adConfig) {
+  var requiresBreakout = false;
+  if (!adConfig.overrides || adConfig.overrides.displayWindowTarget != self) {
+    for (var id in adConfig.assetContainers) {
+      if (adConfig.assetContainers.hasOwnProperty(id)) {
+        var container = adConfig.assetContainers[id];
+        if (container.type != 'inlineDiv' || container.isExpandable) {
+          requiresBreakout = true;
+          break;
+        }
+      }
+    }
+  }
+
+  if (adConfig.overrides && adConfig.overrides.displayWindowTarget) {
+    var displayWindowTarget = adConfig.overrides.displayWindowTarget;
+    displayWindowTarget = (typeof adtechIframeHashArray != 'undefined' && self != top) ?
+        displayWindowTarget.parent : displayWindowTarget;
+  } else {
+    var calculatedTarget = null;
+    var currentWindow = parent;
+    while (currentWindow != undefined) {
+      try {
+        var targetDoc = currentWindow.document;
+        if (targetDoc) {
+          calculatedTarget = currentWindow;
+        }
+      } catch(e) {}
+      currentWindow = (currentWindow == top) ? null : currentWindow.parent;
+    }
+    var displayWindowTarget = calculatedTarget || top;
+  }
+
+  var targetIsFriendly = false;
+  try {
+    var targetDoc = displayWindowTarget.document;
+    if (targetDoc) {
+      targetIsFriendly = true;
+    }
+  } catch(e) {}
+
+  var targetWindow = (requiresBreakout && (self != top && targetIsFriendly)) ?
+          displayWindowTarget : self;
+
+  targetWindow.com = targetWindow.com || {};
+  targetWindow.com.adtech = targetWindow.com.adtech || {};
+
+  targetWindow.com.adtech.AdtechCustomAd$AD_ID$ = function() {
+    // Custom code class constructor.
+  };
+
+  targetWindow.com.adtech.AdtechCustomAd$AD_ID$.prototype = {
+
+    /**
+     * Entry point methods.
+     *
+     * Automatically invoked by the rich media library when the library API is
+     * available to use, and the Advert instance has been instantiated.
+     */
+	preInit: function() {
+	  window.com = com || {};
+	  com.adtech = targetWindow.com.adtech;
+    },
+
+    init: function(advert) {
+      if (!advert.richView) {
+        // The backup client can not render the rich version of the advert.
+        return;
+      }
+			this.pageLoadHandlerExecuted = false;
+      this.domHandlerExecuted = false;
+      
+      // A few useful things to help you get started. Please delete as necessary!
+      this.advert = advert;
+	  this.utils = com.adtech.Utils_2_63_2;
+      this.globalEventBus = targetWindow.adtechAdManager_2_63_2.globalEventBus;
+      this.richMediaEvent = com.adtech.RichMediaEvent_2_63_2;
+			targetWindow.document.body.style.padding = '0px';
+      targetWindow.document.body.style.margin = '0px';
+
+      /*
+       * This is how you listen for your custom events.
+       * ADTECH.close() is actually just an alias of ADTECH.event('close').
+       */
+      advert.eventBus.addEventListener('close',
+          this.utils.createClosure(this, this.closeHandler));
+
+      advert.eventBus.addEventListener('close_advert',
+        this.utils.createClosure(this, this.closeHandler));
+
+
+      //PAGE LOAD
+      if (this.globalEventBus.pageLoaded) {
+        this.pageLoadHandler();
+      } else {
+        this.globalEventBus.addEventListener(this.richMediaEvent.PAGE_LOAD,
+            this.utils.createClosure(this, this.pageLoadHandler));
+      }
+    },
+
+    /*********************************************************
+     *
+     * Create your instance methods below.
+     *
+     * Please remember not to add a trailing comma to you last
+     * method - IE will not like that!
+     *
+     *********************************************************/
+
+    closeHandler: function() {
+      /*
+       * This will get invoked when the close event has been dispatched by any one
+       * of your ad units.
+       */
+    },
+		
+		
+    pageLoadHandler: function() {
+			var self = this;
+// TODO (martin): check if this works with secured
+			curl({
+				baseUrl: adConfig.adServerVars.assetBaseURL
+			},['wallpaper/ca-wallpaper', 'Gate/ca-gate'], function(Wallpaper, Gate) {
+				// Do stuff
+				self.wallpaper = new Wallpaper();
+				self.wallpaper.init(targetWindow, self.advert, self.utils);
+                self.gate = new Gate();
+                self.gate.init(targetWindow, self.advert);
+				self.addDomListener();
+			}
+			);
+            this.globalEventBus.removeEventListener(this.richMediaEvent.PAGE_LOAD,
+        this.utils.createClosure(this, this.pageLoadHandler));
+			
+    },
+		
+		addDomListener: function() {
+			if (this.globalEventBus.DOMLoaded === true) {
+        this.domReadyHandler();
+      } else {
+        this.globalEventBus.addEventListener(this.richMediaEvent.DOM_LOAD,
+            this.utils.createClosure(this, this.domReadyHandler));
+      }
+		},
+		domReadyHandler: function() {
+			this.wallpaper.build();
+		}
+  };
+
+  targetWindow.adtechCallbackInstances = targetWindow.adtechCallbackInstances || [];
+  var instanceIndex = targetWindow.adtechCallbackInstances.length;
+  targetWindow.adtechCallbackInstances[instanceIndex] =
+      new targetWindow.com.adtech.AdtechCustomAd$AD_ID$();
+
+  targetWindow.adtechAdCallbacks = targetWindow.adtechAdCallbacks || {};
+  targetWindow.adtechAdCallbacks[adConfig.adServerVars.uid] =
+      targetWindow.adtechAdCallbacks[adConfig.adServerVars.uid] || [];
+  targetWindow.adtechAdCallbacks[adConfig.adServerVars.uid].push(
+      targetWindow.adtechCallbackInstances[instanceIndex]);
+})(adtechAdConfig);
+
+/* END CUSTOM AD */
+
+
+(function() {
+    (function(AU) {
+        function f() {}
+
+        function AT(B, A) {
+            return 0 == AJ.call(B).indexOf("[object " + A)
+        }
+
+        function AB(A) {
+            return A && "/" == A.charAt(A.length - 1) ? A.substr(0, A.length - 1) : A
+        }
+
+        function e(B, A) {
+            var E, F, D, C;
+            E = 1;
+            F = B;
+            "." == F.charAt(0) && (D = !0, F = F.replace(AY, function(I, G, K, J) {
+                K && E++;
+                return J || ""
+            }));
+            if (D) {
+                D = A.split("/");
+                C = D.length - E;
+                if (0 > C) {
+                    return B
+                }
+                D.splice(C, E);
+                return D.concat(F || []).join("/")
+            }
+            return F
+        }
+
+        function AA(B) {
+            var A = B.indexOf("!");
+            return {
+                h: B.substr(A + 1),
+                f: 0 <= A && B.substr(0, A)
+            }
+        }
+
+        function o() {}
+
+        function AS(B, A) {
+            o.prototype = B || n;
+            var C = new o;
+            o.prototype = n;
+            for (var D in A) {
+                C[D] = A[D]
+            }
+            return C
+        }
+
+        function t() {
+            function B(G, F, I) {
+                E.push([G, F, I])
+            }
+
+            function A(G, F) {
+                for (var J, I = 0; J = E[I++];) {
+                    (J = J[G]) && J(F)
+                }
+            }
+            var D, E, C;
+            D = this;
+            E = [];
+            C = function(G, F) {
+                B = G ? function(I) {
+                    I && I(F)
+                } : function(J, I) {
+                    I && I(F)
+                };
+                C = f;
+                A(G ? 0 : 1, F);
+                A = f;
+                E = AW
+            };
+            this.then = function(F, I, G) {
+                B(F, I, G);
+                return D
+            };
+            this.resolve = function(F) {
+                D.va = F;
+                C(!0, F)
+            };
+            this.reject = function(F) {
+                D.ua = F;
+                C(!1, F)
+            };
+            this.D = function(F) {
+                A(2, F)
+            }
+        }
+
+        function s(A) {
+            return A instanceof t || A instanceof AH
+        }
+
+        function AR(B, A, C, D) {
+            s(B) ? B.then(A, C, D) : A(B)
+        }
+
+        function AG(B, A, C) {
+            var D;
+            return function() {
+                0 <= --B && A && (D = A.apply(AW, arguments));
+                0 == B && C && C(D);
+                return D
+            }
+        }
+
+        function AI() {
+            var B, A;
+            AF = "";
+            B = [].slice.call(arguments);
+            AT(B[0], "Object") && (A = B.shift(), A = r(A));
+            return new AH(B[0], B[1], B[2], A)
+        }
+
+        function r(B, A, C) {
+            var D;
+            AF = "";
+            if (B && (AX.V(B), AQ = AX.a(B), "preloads" in B && (D = new AH(B.preloads, AW, C, AE, !0), AX.m(function() {
+                    AE = D
+                })), B = B.main)) {
+                return new AH(B, A, C)
+            }
+        }
+
+        function AH(B, A, E, F, D) {
+            var C;
+            C = AX.j(AQ, AW, [].concat(B), D);
+            this.then = this.then = B = function(I, G) {
+                AR(C, function(J) {
+                    I && I.apply(AW, J)
+                }, function(J) {
+                    if (G) {
+                        G(J)
+                    } else {
+                        throw J
+                    }
+                });
+                return this
+            };
+            this.next = function(I, G, J) {
+                return new AH(I, G, J, C)
+            };
+            this.config = r;
+            (A || E) && B(A, E);
+            AX.m(function() {
+                AR(D || AE, function() {
+                    AR(F, function() {
+                        AX.w(C)
+                    }, E)
+                })
+            })
+        }
+
+        function d(B) {
+            var A, C;
+            A = B.id;
+            A == AW && (AD !== AW ? AD = {
+                L: "Multiple anonymous defines encountered"
+            } : (A = AX.ha()) || (AD = B));
+            if (A != AW) {
+                C = AV[A];
+                A in AV || (C = AX.i(A, AQ), C = AX.I(C.a, A), AV[A] = C);
+                if (!s(C)) {
+                    throw Error("duplicate define: " + A)
+                }
+                C.ja = !1;
+                AX.J(C, B)
+            }
+        }
+
+        function j() {
+            var A = AX.ea(arguments);
+            d(A)
+        }
+        var AF, AQ, AP, AC, AO = AU.document,
+            i = AO && (AO.head || AO.getElementsByTagName("head")[0]),
+            AM = i && i.getElementsByTagName("base")[0] || null,
+            c = {},
+            b = {},
+            q = {},
+            AK = "addEventListener" in AU ? {} : {
+                loaded: 1,
+                complete: 1
+            },
+            n = {},
+            AJ = n.toString,
+            AW, AV = {},
+            p = {},
+            AE = !1,
+            AD, a = /^\/|^[^:]+:\/\/|^[A-Za-z]:[\\/]/,
+            AY = /(\.)(\.?)(?:$|\/([^\.\/]+.*)?)/g,
+            H = /\/\*[\s\S]*?\*\/|\/\/.*?[\n\r]/g,
+            AN = /require\s*\(\s*(["'])(.*?[^\\])\1\s*\)|[^\\]?(["'])/g,
+            AL = /\s*,\s*/,
+            g, AX;
+        AX = {
+            o: function(B, A, C) {
+                var D;
+                B = e(B, A);
+                if ("." == B.charAt(0)) {
+                    return B
+                }
+                D = AA(B);
+                B = (A = D.f) || D.h;
+                B in C.c && (B = C.c[B].R || B);
+                A && (0 > A.indexOf("/") && !(A in C.c) && (B = AB(C.T) + "/" + A), B = B + "!" + D.h);
+                return B
+            },
+            j: function(B, A, F, G) {
+                function E(I, L) {
+                    var K, J;
+                    K = AX.o(I, C.id, B);
+                    if (!L) {
+                        return K
+                    }
+                    J = AA(K);
+                    if (!J.f) {
+                        return K
+                    }
+                    K = AV[J.f];
+                    J.h = "normalize" in K ? K.normalize(J.h, E, C.a) || "" : E(J.h);
+                    return J.f + "!" + J.h
+                }
+
+                function D(I, L, J) {
+                    var K;
+                    K = L && function(M) {
+                        L.apply(AW, M)
+                    };
+                    if (AT(I, "String")) {
+                        if (K) {
+                            throw Error("require(id, callback) not allowed")
+                        }
+                        J = E(I, !0);
+                        I = AV[J];
+                        if (!(J in AV)) {
+                            throw Error("Module not resolved: " + J)
+                        }
+                        return (J = s(I) && I.b) || I
+                    }
+                    AR(AX.w(AX.j(B, C.id, I, G)), K, J)
+                }
+                var C;
+                C = new t;
+                C.id = A || "";
+                C.ia = G;
+                C.K = F;
+                C.a = B;
+                C.F = D;
+                D.toUrl = function(I) {
+                    return AX.i(E(I, !0), B).url
+                };
+                C.o = E;
+                return C
+            },
+            I: function(B, A, E) {
+                var F, D, C;
+                F = AX.j(B, A, AW, E);
+                D = F.resolve;
+                C = AG(1, function(I) {
+                    F.v = I;
+                    try {
+                        return AX.Z(F)
+                    } catch (G) {
+                        F.reject(G)
+                    }
+                });
+                F.resolve = function(G) {
+                    AR(E || AE, function() {
+                        D(AV[F.id] = p[F.url] = C(G))
+                    })
+                };
+                F.M = function(G) {
+                    AR(E || AE, function() {
+                        F.b && (C(G), F.D(b))
+                    })
+                };
+                return F
+            },
+            Y: function(B, A, C, D) {
+                return AX.j(B, C, AW, D)
+            },
+            ga: function(A) {
+                return A.F
+            },
+            N: function(A) {
+                return A.b || (A.b = {})
+            },
+            fa: function(B) {
+                var A = B.A;
+                A || (A = B.A = {
+                    id: B.id,
+                    uri: AX.O(B),
+                    exports: AX.N(B),
+                    config: function() {
+                        return B.a
+                    }
+                }, A.b = A.exports);
+                return A
+            },
+            O: function(A) {
+                return A.url || (A.url = AX.H(A.F.toUrl(A.id), A.a))
+            },
+            V: function(B) {
+                var A, E, F, D, C;
+                A = "curl";
+                E = "define";
+                F = D = AU;
+                if (B && (C = B.overwriteApi || B.sa, A = B.apiName || B.la || A, F = B.apiContext || B.ka || F, E = B.defineName || B.na || E, D = B.defineContext || B.ma || D, AP && AT(AP, "Function") && (AU.curl = AP), AP = null, AC && AT(AC, "Function") && (AU.define = AC), AC = null, !C)) {
+                    if (F[A] && F[A] != AI) {
+                        throw Error(A + " already exists")
+                    }
+                    if (D[E] && D[E] != j) {
+                        throw Error(E + " already exists")
+                    }
+                }
+                F[A] = AI;
+                D[E] = j
+            },
+            a: function(B) {
+                function A(P, O) {
+                    var M, N, L, J, I;
+                    for (I in P) {
+                        L = P[I];
+                        AT(L, "String") && (L = {
+                            path: P[I]
+                        });
+                        L.name = L.name || I;
+                        J = E;
+                        N = AA(AB(L.name));
+                        M = N.h;
+                        if (N = N.f) {
+                            J = D[N], J || (J = D[N] = AS(E), J.c = AS(E.c), J.g = []), delete P[I]
+                        }
+                        N = L;
+                        var K = O,
+                            Q = void 0;
+                        N.path = AB(N.path || N.location || "");
+                        K && (Q = N.main || "./main", "." == Q.charAt(0) || (Q = "./" + Q), N.R = e(Q, N.name + "/"));
+                        N.a = N.config;
+                        N.a && (N.a = AS(E, N.a));
+                        N.W = M.split("/").length;
+                        M ? (J.c[M] = N, J.g.push(M)) : J.s = AX.U(L.path, E)
+                    }
+                }
+
+                function F(J) {
+                    var I = J.c;
+                    J.S = new RegExp("^(" + J.g.sort(function(K, L) {
+                        return I[L].W - I[K].W
+                    }).join("|").replace(/\/|\./g, "\\$&") + ")(?=\\/|$)");
+                    delete J.g
+                }
+                var G, E, D, C;
+                "baseUrl" in B && (B.s = B.baseUrl);
+                "main" in B && (B.R = B.main);
+                "preloads" in B && (B.ta = B.preloads);
+                "pluginPath" in B && (B.T = B.pluginPath);
+                if ("dontAddFileExt" in B || B.l) {
+                    B.l = new RegExp(B.dontAddFileExt || B.l)
+                }
+                G = AQ;
+                E = AS(G, B);
+                E.c = AS(G.c);
+                D = B.plugins || {};
+                E.plugins = AS(G.plugins);
+                E.C = AS(G.C, B.C);
+                E.B = AS(G.B, B.B);
+                E.g = [];
+                A(B.packages, !0);
+                A(B.paths, !1);
+                for (C in D) {
+                    B = AX.o(C + "!", "", E), E.plugins[B.substr(0, B.length - 1)] = D[C]
+                }
+                D = E.plugins;
+                for (C in D) {
+                    if (D[C] = AS(E, D[C]), B = D[C].g) {
+                        D[C].g = B.concat(E.g), F(D[C])
+                    }
+                }
+                for (C in G.c) {
+                    E.c.hasOwnProperty(C) || E.g.push(C)
+                }
+                F(E);
+                return E
+            },
+            i: function(B, A) {
+                var E, F, D, C;
+                E = A.c;
+                D = a.test(B) ? B : B.replace(A.S, function(G) {
+                    F = E[G] || {};
+                    C = F.a;
+                    return F.path || ""
+                });
+                return {
+                    a: C || AQ,
+                    url: AX.U(D, A)
+                }
+            },
+            U: function(B, A) {
+                var C = A.s;
+                return C && !a.test(B) ? AB(C) + "/" + B : B
+            },
+            H: function(B, A) {
+                return B + ((A || AQ).l.test(B) ? "" : ".js")
+            },
+            P: function(B, A, C) {
+                var D = AO.createElement("script");
+                D.onload = D.onreadystatechange = function(E) {
+                    E = E || AU.event;
+                    if ("load" == E.type || AK[D.readyState]) {
+                        delete q[B.id], D.onload = D.onreadystatechange = D.onerror = "", A()
+                    }
+                };
+                D.onerror = function() {
+                    C(Error("Syntax or http error: " + B.url))
+                };
+                D.type = B.pa || "text/javascript";
+                D.charset = "utf-8";
+                D.async = !B.ra;
+                D.src = B.url;
+                q[B.id] = D;
+                i.insertBefore(D, AM);
+                return D
+            },
+            $: function(B) {
+                var A = [],
+                    C;
+                ("string" == typeof B ? B : B.toSource ? B.toSource() : B.toString()).replace(H, "").replace(AN, function(D, G, F, E) {
+                    E ? C = C == E ? AW : C : C || A.push(F);
+                    return ""
+                });
+                return A
+            },
+            ea: function(B) {
+                var A, F, G, E, D, C;
+                D = B.length;
+                G = B[D - 1];
+                E = AT(G, "Function") ? G.length : -1;
+                2 == D ? AT(B[0], "Array") ? F = B[0] : A = B[0] : 3 == D && (A = B[0], F = B[1]);
+                !F && 0 < E && (C = !0, F = ["require", "exports", "module"].slice(0, E).concat(AX.$(G)));
+                return {
+                    id: A,
+                    v: F || [],
+                    G: 0 <= E ? G : function() {
+                        return G
+                    },
+                    u: C
+                }
+            },
+            Z: function(B) {
+                var A;
+                A = B.G.apply(B.u ? B.b : AW, B.v);
+                A === AW && B.b && (A = B.A ? B.b = B.A.exports : B.b);
+                return A
+            },
+            J: function(B, A) {
+                B.G = A.G;
+                B.u = A.u;
+                B.K = A.v;
+                AX.w(B)
+            },
+            w: function(K) {
+                function J(N, M, O) {
+                    D[M] = N;
+                    O && A(N, M)
+                }
+
+                function G(M, R) {
+                    var Q, P, O, N;
+                    Q = AG(1, function(S) {
+                        P(S);
+                        B(S, R)
+                    });
+                    P = AG(1, function(S) {
+                        A(S, R)
+                    });
+                    O = AX.ba(M, K);
+                    (N = s(O) && O.b) && P(N);
+                    AR(O, Q, K.reject, K.b && function(S) {
+                        O.b && (S == c ? P(O.b) : S == b && Q(O.b))
+                    })
+                }
+
+                function I() {
+                    K.resolve(D)
+                }
+                var F, E, D, C, L, A, B;
+                D = [];
+                E = K.K;
+                C = E.length;
+                0 == E.length && I();
+                A = AG(C, J, function() {
+                    K.M && K.M(D)
+                });
+                B = AG(C, J, I);
+                for (F = 0; F < C; F++) {
+                    L = E[F], L in g ? (B(g[L](K), F, !0), K.b && K.D(c)) : L ? G(L, F) : B(AW, F, !0)
+                }
+                return K
+            },
+            ca: function(A) {
+                AX.O(A);
+                AX.P(A, function() {
+                    var B = AD;
+                    AD = AW;
+                    !1 !== A.ja && (!B || B.L ? A.reject(Error(B && B.L || "define() missing or duplicated: " + A.url)) : AX.J(A, B))
+                }, A.reject);
+                return A
+            },
+            ba: function(N, M) {
+                var K, L, J, I, G, F, O, A, C, E, D, B;
+                K = M.o;
+                L = M.ia;
+                J = M.a || AQ;
+                G = K(N);
+                G in AV ? F = G : (I = AA(G), A = I.h, F = I.f || A, C = AX.i(F, J));
+                if (!(G in AV)) {
+                    if (B = AX.i(A, J).a, I.f) {
+                        O = F
+                    } else {
+                        if (O = B.moduleLoader || B.qa || B.loader || B.oa) {
+                            A = F, F = O, C = AX.i(O, J)
+                        }
+                    }
+                }
+                F in AV ? E = AV[F] : C.url in p ? E = AV[F] = p[C.url] : (E = AX.I(B, F, L), E.url = AX.H(C.url, C.a), AV[F] = p[C.url] = E, AX.ca(E));
+                F == O && (I.f && J.plugins[I.f] && (B = J.plugins[I.f]), D = new t, AR(E, function(Q) {
+                    var P, T, S;
+                    S = Q.dynamic;
+                    A = "normalize" in Q ? Q.normalize(A, K, E.a) || "" : K(A);
+                    T = O + "!" + A;
+                    P = AV[T];
+                    if (!(T in AV)) {
+                        P = AX.Y(B, T, A, L);
+                        S || (AV[T] = P);
+                        var R = function(U) {
+                            S || (AV[T] = U);
+                            P.resolve(U)
+                        };
+                        R.resolve = R;
+                        R.reject = R.error = P.reject;
+                        Q.load(A, P.F, R, B)
+                    }
+                    D != P && AR(P, D.resolve, D.reject, D.D)
+                }, D.reject));
+                return D || E
+            },
+            ha: function() {
+                var B;
+                if (!AT(AU.opera, "Opera")) {
+                    for (var A in q) {
+                        if ("interactive" == q[A].readyState) {
+                            B = A;
+                            break
+                        }
+                    }
+                }
+                return B
+            },
+            da: function(B) {
+                var A = 0,
+                    C, D;
+                for (C = AO && (AO.scripts || AO.getElementsByTagName("script")); C && (D = C[A++]);) {
+                    if (B(D)) {
+                        return D
+                    }
+                }
+            },
+            aa: function() {
+                var B, A = "";
+                (B = AX.da(function(C) {
+                    (C = C.getAttribute("data-curl-run")) && (A = C);
+                    return C
+                })) && B.setAttribute("data-curl-run", "");
+                return A
+            },
+            X: function() {
+                function B() {
+                    AX.P({
+                        url: D.shift()
+                    }, A, A)
+                }
+
+                function A() {
+                    AF && (D.length ? (AX.m(C), B()) : C("run.js script did not run."))
+                }
+
+                function C(E) {
+                    throw Error(E || "Primary run.js failed. Trying fallback.")
+                }
+                var D = AF.split(AL);
+                D.length && B()
+            },
+            m: function(A) {
+                setTimeout(A, 0)
+            }
+        };
+        g = {
+            require: AX.ga,
+            exports: AX.N,
+            module: AX.fa
+        };
+        AI.version = "0.8.13";
+        AI.config = r;
+        j.amd = {
+            plugins: !0,
+            jQuery: !0,
+            curl: "0.8.13"
+        };
+        AQ = {
+            s: "",
+            T: "curl/plugin",
+            l: /\?|\.js\b/,
+            C: {},
+            B: {},
+            plugins: {},
+            c: {},
+            S: /$^/
+        };
+        AP = AU.curl;
+        AC = AU.define;
+        AP && AT(AP, "Object") ? (AU.curl = AW, r(AP)) : AX.V();
+        (AF = AX.aa()) && AX.m(AX.X);
+        AV.curl = AI;
+        AV["curl/_privileged"] = {
+            core: AX,
+            cache: AV,
+            config: function() {
+                return AQ
+            },
+            _define: d,
+            _curl: AI,
+            Promise: t
+        }
+    })(this.window || "undefined" != typeof global && global || this)
+}).call(this);
+(function(D) {
+    if (!D.initOverride) {
+        var B = "http://localhost:3000/test/";
+        if (D.adServerVars.servingProto === "https") {
+            var E = ["baseURL", "assetBaseURL"];
+            for (var C = 0; C < E.length; C++) {
+                var G = D.adServerVars[E[C]];
+                if (G) {
+                    D.adServerVars[E[C]] = G.replace(/^http:\/\/[-a-z0-9\.]*\//i, "http://localhost:3000/test/")
+                }
+            }
+            B = "http://localhost:3000/test/"
+        }
+        var H = (D.mraidCompatible) ? "MRAID" : "";
+        var F = B + "adtechRichMediaLib" + H + "_2_63_2.js";
+        D.rmLibUrl = F;
+        if (!window.adtechAdManager_2_63_2) {
+            adtechAdQueue = window.adtechAdQueue || [];
+            adtechAdQueue.push(D);
+            if (!window.adtechAdManagerReqs || !window.adtechAdManagerReqs["2_63_2"]) {
+                adtechAdManagerReqs = window.adtechAdManagerReqs || {};
+                adtechAdManagerReqs["2_63_2"] = true;
+                var A = "scr";
+                document.write("<" + A + 'ipt type="text/javascript" src="' + F + '"></' + A + "ipt>")
+            }
+        } else {
+            adtechAdManager_2_63_2.registerAd(D)
+        }
+    }
+})(adtechAdConfig);
+
+
+</script>
+    </div>
+</body>
+
+</html>
