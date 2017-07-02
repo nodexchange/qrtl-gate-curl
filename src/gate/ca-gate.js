@@ -9,7 +9,7 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         this.container = {};
         this.filesLoaded = false;
         this.autoOpenDelay = 0;
-        this.autoCloseDelay = 33;
+        this.autoCloseDelay = 133;
         this.listeners = new Listeners(this);
         this.builders = new Builders(this);
         this.transitions = new Transitions(this);
@@ -100,6 +100,14 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         if (mainContainer.div) {
           backDiv.appendChild(mainContainer.div);
         }
+
+        var backgroundPage = targetWindow.document.createElement("div");
+        backgroundPage.id = 'background';
+        // backgroundPage.style.background = ''
+        backgroundPage.setAttribute('class', 'card-page');
+        webpageContainer.appendChild(backgroundPage);
+        self.backgroundPage = backgroundPage;
+
         self.transitions.initTransition(); // transition;
         self.pageDomUpdated = true;
       },
@@ -134,6 +142,10 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
       },
       shiftWallpaperPostFlip: function(flipped) {
         // Dispatch event to the wallpaper? 
+      },
+
+      closeHandler: function() {
+        this.transitions.initTransition(); // transition;
       },
 
       events: function () {

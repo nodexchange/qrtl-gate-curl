@@ -116,10 +116,7 @@ adtechAdConfig.assetContainers.main.height = 250;
      *********************************************************/
 
     closeHandler: function() {
-      /*
-       * This will get invoked when the close event has been dispatched by any one
-       * of your ad units.
-       */
+      this.gate.closeHandler();
     },
 		
 		 pageLoadHandler: function() {

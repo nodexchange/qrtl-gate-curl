@@ -164,13 +164,13 @@ define(function () {
 
       try {
         var innerEl = this.targetWindow.document.getElementById('inner');
-        innerEl.style.marginTop = '120px';
+        innerEl.style.marginTop = '250px';
       } catch (e) {
         console.log('___ inner not found ' + e.message);
       }
 
       var topValue = 0;
-      var topRails = 120;
+      var topRails = 250;
 
       main.msnDivHeader.style.top = topValue + 'px';
       main.msnDivHeader.style.width = main.helpers.getPX(headerW);

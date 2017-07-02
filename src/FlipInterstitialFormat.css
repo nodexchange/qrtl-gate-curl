@@ -57,10 +57,6 @@ div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 .flipped {
@@ -78,4 +74,50 @@ div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
   transition: 1.5s;
   opacity: 1;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+#webpageContainer #front:after {
+  z-index: 1000;
+}
+
+#webpageContainer #back {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  display: block;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transition: 1s;
+  opacity: 0;
+}
+
+#webpageContainer #background {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  display: block;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  background: #fff url(1366X76815.jpg) no-repeat 50% 0;
+  transition: 1s;
+  opacity: 0;
+}
+
+.opacityFadeIn {
+    opacity: 1 !important;
+}
+
+#webpageContainer #back:after {
+  z-index: -2;
 }

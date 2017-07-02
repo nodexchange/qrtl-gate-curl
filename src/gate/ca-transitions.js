@@ -18,11 +18,16 @@ define(function () {
       var self = this;
       var targetWindow = this.gate.targetWindow;
       var cards = targetWindow.document.getElementsByClassName('card-page');
-      if (this.card.children[0].className.indexOf('flipped') ===  -1) {
+      var frontPage = self.card.children[0];
+      var backPage = self.card.children[1];
+      var backgroundPage = self.card.children[2];
+      if (frontPage.className.indexOf('flipped') === -1) {
         setTimeout(function () {
-          self.card.children[0].className += ' flipPosition flipped';
-          self.card.children[1].style.display = 'block';
-          self.card.children[0].style.pointerEvents = 'none';
+          frontPage.className += ' flipPosition flipped';
+          backPage.className += ' opacityFadeIn';
+          backgroundPage.className += ' opacityFadeIn';
+          backPage.style.display = 'block';
+          frontPage.style.pointerEvents = 'none';
         }, 500);
         console.log('[GATE] OPEN!!!!!!!!!');
         self.gate.updateMainDimensions(true);
@@ -32,10 +37,12 @@ define(function () {
       } else {
         console.log('[GATE] CLOSE!!!!!!!!!');
         setTimeout(function () {
-          self.card.children[1].style.display = 'none';
+          backPage.style.display = 'none';
         }, 500);
-        self.card.children[0].className = 'card-page';
-        self.card.children[0].style.pointerEvents = 'auto';
+        frontPage.className = 'card-page';
+        backPage.className = 'card-page';
+        backgroundPage.className = 'card-page';
+        frontPage.style.pointerEvents = 'auto';
         self.gate.updateMainDimensions(false);
 
         setTimeout(function () {
@@ -47,6 +54,12 @@ define(function () {
           clearTimeout(self.flipTimer2);
         }, 1000);
       }
+    },
+
+    playCloseAnimation: function() {
+      clearTimeout(this.flipTimer1);
+      clearTimeout(this.flipTimer2);
+      this.flip();
     }
   };
 

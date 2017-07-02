@@ -33,7 +33,7 @@ define(['wallpaper/ca-settings', 'wallpaper/ca-handlers', 'wallpaper/ca-helpers'
 
           //fcom/sponsorships go into a different target
           this.handlers.targetMain = this.handlers.targetDoc.getElementById('precontent');
-          this.settings.msnHeadHeight = 120;
+          this.settings.msnHeadHeight = 250;
 
           
           this.msnDivHolder = this.helpers.createDiv(this.handlers.targetDoc, 'oc-holder');

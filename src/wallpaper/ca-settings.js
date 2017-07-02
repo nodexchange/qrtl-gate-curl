@@ -18,7 +18,7 @@ define(function () {
 
         msnIsIE: false,
         msnIsEdge: false,
-        msnHeadHeight: 120,
+        msnHeadHeight: 250,
         msnHeadOffset: 0,
         msnPadOffset: 20,
 
