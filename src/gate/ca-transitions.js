@@ -18,24 +18,23 @@ define(function () {
       var self = this;
       var targetWindow = this.gate.targetWindow;
       var cards = targetWindow.document.getElementsByClassName('card-page');
-      console.log('[FLIP]');
-      if (this.card.className === '') {
+      if (this.card.children[0].className.indexOf('flipped') ===  -1) {
         setTimeout(function () {
-          self.card.children[0].style.display = 'none';
+          self.card.children[0].className += ' flipPosition flipped';
           self.card.children[1].style.display = 'block';
+          self.card.children[0].style.pointerEvents = 'none';
         }, 500);
-        self.card.className = 'flipped';
-        self.card.children[0].style.pointerEvents = 'none';
+        console.log('[GATE] OPEN!!!!!!!!!');
         self.gate.updateMainDimensions(true);
         cards[0].style.overflow = 'hidden';
         cards[1].style.overflow = 'hidden';
         self.gate.shiftWallpaperPostFlip(false);
       } else {
+        console.log('[GATE] CLOSE!!!!!!!!!');
         setTimeout(function () {
-          self.card.children[0].style.display = 'block';
           self.card.children[1].style.display = 'none';
         }, 500);
-        self.card.className = '';
+        self.card.children[0].className = 'card-page';
         self.card.children[0].style.pointerEvents = 'auto';
         self.gate.updateMainDimensions(false);
 

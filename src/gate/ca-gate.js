@@ -9,7 +9,7 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         this.container = {};
         this.filesLoaded = false;
         this.autoOpenDelay = 0;
-        this.autoCloseDelay = 3;
+        this.autoCloseDelay = 33;
         this.listeners = new Listeners(this);
         this.builders = new Builders(this);
         this.transitions = new Transitions(this);
@@ -97,7 +97,9 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         webpageContainer.appendChild(backDiv);
 
         var mainContainer = self.advert.getAssetContainer('main');
-        backDiv.appendChild(mainContainer.div);
+        if (mainContainer.div) {
+          backDiv.appendChild(mainContainer.div);
+        }
         self.transitions.initTransition(); // transition;
         self.pageDomUpdated = true;
       },

@@ -43,55 +43,39 @@ div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup
 }
 
 .container {
-  width: 1280px;
-  height: 780px;
+  width: 100%;
+  height: 100vw;
   position: relative;
   border: 1px solid #CCC;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
 }
-#flyover {
-	transition: all 2s ease-in-out;
-	position: absolute;
-	left: -20vw;
-}
+
 #webpageContainer {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transition: -webkit-transform 1s;
-  -moz-transition: -moz-transform 1s;
-  -o-transition: -o-transform 1s;
-  transition: transform 1s;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
-#webpageContainer.flipped {
-  -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
+.flipped {
+    transform: perspective(1000px) rotateX(0deg) rotateY(110deg) rotateZ(0deg) scale(1) !important;
 }
-
-#webpageContainer .card-page {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  /* backface-visibility: hidden; */
+.flipPosition {
+    left: -10px !important;
+    top: -10px !important;
 }
 
 #webpageContainer #front {
-  /*background: red;*/
-}
-
-#webpageContainer #back {
-  -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
+  top: 0px;
+  left: 0px;
+  transform-origin: 0% 0% 0px;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+  transition: 1.5s;
+  opacity: 1;
 }

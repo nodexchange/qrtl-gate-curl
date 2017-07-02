@@ -1,0 +1,6 @@
+- video opacity animation
+- test for adtech library
+- top banner to be 970x250
+- cleaner close text button
+- verify responsivnes (overflow fails on chrome small resolution).
+- fix smaller steps for wallpaper
