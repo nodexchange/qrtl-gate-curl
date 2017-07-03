@@ -242,7 +242,7 @@ com.adtech.MobileTemplate.FlipInterstitial.Advert.prototype = {
     return img;
   },
   createVideoPlayer: function(container) {
-    var videoSettings = ADTECH.getContent('Video Player', {top:400, left:400, 'video mp4':'stock.mp4', 'video webm': '.webm', 'width': 500, height: 300, 'size settings':'px||%', autoplay:true, poster:'poster.jpg' });
+    var videoSettings = ADTECH.getContent('Video Player', {top:20, left:20, 'video mp4':'stock.mp4', 'video webm': '.webm', 'width': 500, height: 300, 'size settings':'px||%', autoplay:true, poster:'poster.jpg' });
     var svpContainer = document.createElement('div');
     svpContainer.className = 'svpContainer';
     container.appendChild(svpContainer);
@@ -260,6 +260,7 @@ com.adtech.MobileTemplate.FlipInterstitial.Advert.prototype = {
 		ADTECH.addEventListener('pause_video_player', function() {
 			smartPlayer.pause();
 		});
+    console.log('[advert] video mp4 : ' + videoSettings['video mp4']);
     ADTECH.require(['SmartVideoPlayer/1.5.1/SmartVideoPlayer'], function() {
       smartPlayer = ADTECH.modules.SmartVideoPlayer.createPlayer({
         container: svpContainer,

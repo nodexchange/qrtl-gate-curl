@@ -134,9 +134,11 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
           this.advert.getAssetContainer('main').div.children[0].height = adHeight;
           this.advert.getAssetContainer('main').div.children[0].style.height = adHeight + 'px';
         } else {
+          /*
           this.advert.getAssetContainer('main').div.style.height = 92 + 'px';
           this.advert.getAssetContainer('main').div.children[0].height = 92;
           this.advert.getAssetContainer('main').div.children[0].style.height = 92 + 'px';
+          */
         }
 
       },

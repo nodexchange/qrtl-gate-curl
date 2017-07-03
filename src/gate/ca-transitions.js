@@ -24,11 +24,13 @@ define(function () {
       if (frontPage.className.indexOf('flipped') === -1) {
         setTimeout(function () {
           frontPage.className += ' flipPosition flipped';
-          backPage.className += ' opacityFadeIn';
           backgroundPage.className += ' opacityFadeIn';
-          backPage.style.display = 'block';
           frontPage.style.pointerEvents = 'none';
         }, 500);
+          setTimeout(function() {
+            backPage.style.display = 'block';
+            backPage.className += ' opacityFadeIn';
+          }, 1200);
         console.log('[GATE] OPEN!!!!!!!!!');
         self.gate.updateMainDimensions(true);
         cards[0].style.overflow = 'hidden';

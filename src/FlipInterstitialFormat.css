@@ -109,7 +109,7 @@ div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup
   height: 100%;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  background: #fff url(1366X76815.jpg) no-repeat 50% 0;
+  background: #fff url(background.jpg) no-repeat 50% 0;
   transition: 1s;
   opacity: 0;
 }

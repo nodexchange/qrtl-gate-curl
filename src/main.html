@@ -41,14 +41,22 @@
             right: 10vw;
             cursor: pointer;
         }
+        #closeButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px 20px;
+            color: #fff;
+            background: #063;
+            font: 14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <div id="flipInterstitialContainer">
-        <div id="close-button" onclick="ADTECH.event('close_advert')">
-            <img src="close-button.png" alt="close-button" width=29 height=29></img>
-        </div>
+        <div id="closeButton" onclick="ADTECH.event('close_advert')">Close X</div>
     </div>
 </body>
 
