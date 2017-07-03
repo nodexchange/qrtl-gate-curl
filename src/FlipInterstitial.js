@@ -143,7 +143,7 @@ com.adtech.MobileTemplate.Util = {
   }
 };
 com.adtech.MobileTemplate.FlipInterstitial.Advert = function () {
-  this.advertSettings = ADTECH.getContent('Advert image or HTML file', "1366x76815.jpg");
+  this.advertSettings = ADTECH.getContent('Gate image or HTML file', "1366x76815.jpg");
   var autoScale = ADTECH.getContent('Auto Scale Advert', "false");
   this.advertAutoScale = (autoScale == 'true' || autoScale === true) ? true : false;
   this.init();

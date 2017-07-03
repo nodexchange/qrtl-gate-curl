@@ -7,6 +7,7 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         this.advert = advert;
         this.targetWindow = targetWindow;
         this.container = {};
+        this.gateSettings = this.advert.getContent('Gate Background');
         this.filesLoaded = false;
         this.autoOpenDelay = 0;
         this.autoCloseDelay = 133;
@@ -103,7 +104,9 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
 
         var backgroundPage = targetWindow.document.createElement("div");
         backgroundPage.id = 'background';
-        // backgroundPage.style.background = ''
+
+        var gateBg = self.gateSettings;
+        backgroundPage.style.background = '#ffffff url(' + gateBg + ') no-repeat 50% 0';
         backgroundPage.setAttribute('class', 'card-page');
         webpageContainer.appendChild(backgroundPage);
         self.backgroundPage = backgroundPage;
@@ -152,6 +155,7 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
 
       events: function () {
         // ADTECH.getContent('Wallpaper Background Colour', '#fff');
+        // ADTECH.getContent('Gate Background', 'background.jpg');
         // ADTECH.getContent('Auto close time - in seconds', '10');
         // ADTECH.getContent('Auto open time - in seconds', '0');
         // ADTECH.getContent('Auto Full Screen Size', "false");
