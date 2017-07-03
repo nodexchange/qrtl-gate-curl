@@ -14,6 +14,11 @@ define(function (gate) {
         if (bgSettings.enabled === true) {
           setTimeout(function () {
             var back = self.targetWindow.document.getElementById('back');
+            try {
+
+            } catch (e) {
+              console.log('[gate/ca-builders] : "back" div not found');
+            }
             back.style.backgroundColor = bgSettings.colour;
           }, 400);
         }

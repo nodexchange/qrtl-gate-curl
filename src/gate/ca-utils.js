@@ -61,14 +61,14 @@ define(function () {
         if (filetype == 'css') {
           this.targetWindow.document.getElementsByTagName("head")[0].appendChild(fileref);
         } else {
-          this.targetWindow.document.body.appendChild(fileref)
+          this.targetWindow.document.body.appendChild(fileref);
         }
       }
     },
 
     getFileUrl: function(fileName) {
-      // return this.advert.getFileUrl(fileName);
-      return 'http://localhost:3000/src/' + fileName;
+      // return 'http://localhost:3000/src/' + fileName;
+      return this.advert.getFileUrl(fileName);
     }
   };
 

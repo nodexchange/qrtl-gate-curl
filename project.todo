@@ -5,7 +5,8 @@ Gate Template:
     ☐ Responsiveness
     ☐ Verify https / http connection
     ☐ fix smaller steps for wallpaper
-    ☐ content value for background image
+    ☐ fix ca-utils getFileUrl
+    ✔ content value for background image @done (04/07/2017, 00:11:32)
 
 TODO HINTS:
     New Task:

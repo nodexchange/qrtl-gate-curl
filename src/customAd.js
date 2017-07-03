@@ -123,12 +123,14 @@ adtechAdConfig.assetContainers.main.height = 250;
 			var self = this;
       if (this.pageLoadHandlerExecuted) {
             return;
-        }
-        this.pageLoadHandlerExecuted = true;
+      }
+      this.pageLoadHandlerExecuted = true;
+			var caWallpaper2 = this.advert.getFileUrl('wallpaper/ca-wallpaper.js');
+			var path = caWallpaper2.split('wallpaper/ca-wallpaper')[0];
 // TODO (martin): check if this works with secured
 			curl({
-				baseUrl: adConfig.adServerVars.assetBaseURL
-			},['wallpaper/ca-wallpaper', 'Gate/ca-gate'], function(Wallpaper, Gate) {
+				baseUrl: path
+			},['wallpaper/ca-wallpaper', 'gate/ca-gate'], function(Wallpaper, Gate) {
 				// Do stuff
 				self.wallpaper = new Wallpaper();
 				self.wallpaper.init(targetWindow, self.advert, self.utils);
