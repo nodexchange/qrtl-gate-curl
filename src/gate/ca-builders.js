@@ -13,9 +13,8 @@ define(function (gate) {
       if (bgSettings) {
         if (bgSettings.enabled === true) {
           setTimeout(function () {
-            var back = self.targetWindow.document.getElementById('back');
             try {
-
+              var back = self.targetWindow.document.getElementById('back');
             } catch (e) {
               console.log('[gate/ca-builders] : "back" div not found');
             }
