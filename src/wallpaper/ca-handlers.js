@@ -12,6 +12,7 @@ define(function () {
       this.advert = advert;
       this.targetWindow = targetWindow;
       this.main = main;
+
       if (this.domHandlerExecuted) {
         return;
       }
@@ -19,16 +20,14 @@ define(function () {
       //LOAD PART 1/2
 
       //VARIABLES
-      var wallpaperSettings = this.advert.contentProperties.wallpaper;
+      var wallpaperSettings = advert.contentProperties.wallpaper;
       var target = targetWindow.parent;
-      this.target = target;
       var targetDoc = target.document;
-      this.targetDoc = targetDoc;
       var targetMain = targetDoc.getElementById('main');
-      this.targetMain = targetMain;
+      
       //placement support
-      this.main.settings.msnPlacement = wallpaperSettings.placement;
-      if (this.msnPreviewMode) this.main.settings.msnPlacement = 'default';
+      main.settings.msnPlacement = wallpaperSettings.placement;
+      if (main.settings.msnPreviewMode) main.settings.msnPlacement = 'default';
 
       //allow support for custom height
       if (main.wallpaperSettings.height === undefined) {
@@ -37,20 +36,23 @@ define(function () {
       main.settings.msnWPHeight = main.wallpaperSettings.height;
 
       //logo capping support
-      this.msnLogoCap = wallpaperSettings.logo_cap != 'none' ? Number(wallpaperSettings.logo_cap) : 0;
+      main.settings.msnLogoCap = wallpaperSettings.logo_cap != 'none' ? Number(wallpaperSettings.logo_cap) : 0;
 
       // Fixed rails
-      this.msnRailsFixed = wallpaperSettings.fixed_rails === true ? true : false;
+      main.settings.msnRailsFixed = wallpaperSettings.fixed_rails === true ? true : false;
       //TODO NOTE  - auto should be set in the buildLogos based on the center content overlap
 
       //DETECT PREVIEW
       if (targetMain == null) {
-        this.target = targetWindow;
-        this.targetDoc = targetWindow.document;
-        this.targetMain = targetDoc.body;
-        this.msnPreviewMode = true;
-        this.main.settings.msnPlacement = 'default';
+        target = targetWindow;
+        targetDoc = targetWindow.document;
+        targetMain = targetDoc.body;
+        main.settings.msnPreviewMode = true;
+        main.settings.msnPlacement = 'default';
       }
+      this.target = target;
+      this.targetDoc = targetDoc;
+      this.targetMain = targetMain;
     },
     pageLoadHandler: function () {
       if (this.pageLoadHandlerExecuted) {

@@ -2,11 +2,13 @@ Gate Template:
     ✔ Video Opacity. @done (03/07/2017, 12:20:30)
     ✔ Top Banner to be 970x250 @done (03/07/2017, 12:20:31)
     ✔ Cleaner Close Text Butotn @done (03/07/2017, 12:28:18)
+    ✔ fix ca-utils getFileUrl @done (04/07/2017, 11:45:02)
+    ✔ content value for background image @done (04/07/2017, 00:11:32)
+    ☐ fix issue with the adConfig failing to render main.
     ☐ Responsiveness
     ☐ Verify https / http connection
     ☐ fix smaller steps for wallpaper
-    ☐ fix ca-utils getFileUrl
-    ✔ content value for background image @done (04/07/2017, 00:11:32)
+    ☐ fix back main background width / height (match with local).
 
 TODO HINTS:
     New Task:

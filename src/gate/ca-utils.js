@@ -13,6 +13,7 @@ define(function () {
         this.gate.builders.buildBackground();
       }
       var styleCssUrl = this.getFileUrl('FlipInterstitialFormat.css');
+      console.log(styleCssUrl);
       var self = this;
       if (!self.gate.pageDomUpdated) {
         self.loadJsCssFile(styleCssUrl, 'css', self.gate.manipulateDom, self.gate);

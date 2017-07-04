@@ -19,10 +19,11 @@ define(['wallpaper/ca-settings', 'wallpaper/ca-handlers', 'wallpaper/ca-helpers'
         this.advert = advert;
         this.targetWindow = targetWindow;
         this.wallpaperSettings = this.advert.getContent('wallpaper');
-        this.handlers.domLoadHandler(this.advert, targetWindow, this);
+        
       },
 
       build: function () {
+        this.handlers.domLoadHandler(this.advert, this.targetWindow, this);
         //BUILD DIVS
         this.msnDivHeader = this.helpers.createDiv(this.handlers.targetDoc, 'oc-header');
         this.msnDivRailL = this.helpers.createDiv(this.handlers.targetDoc, 'oc-rail-left', 'oc-rail');
