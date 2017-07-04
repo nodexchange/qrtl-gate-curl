@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    overflow-y: scroll;
+    font-size: 100.01%
+}
+
+body {
+    background: #e3e3e3;
+    font-size: 62.5%
+}
+
+body,textarea,input,select,option,button {
+    color: #777;
+    font: 16px/1.375 Georgia,serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,ul,ol,dl,p,table,pre,h1,h2,h3,h4,h5,h6 {
+    display: block;
+    margin: 0 0 15px
+}
+
+:last-child {
+    margin-bottom: 0!important
+}
+
+.last-child {
+    margin-bottom: 0!important
+}
+
+.card-page {
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  height: 100vw;
+  position: relative;
+  border: 1px solid #CCC;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+}
+
+#webpageContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.flipped {
+    transform: perspective(1000px) rotateX(0deg) rotateY(110deg) rotateZ(0deg) scale(1) !important;
+}
+.flipPosition {
+    left: -10px !important;
+    top: -10px !important;
+}
+
+#webpageContainer #front {
+  top: 0px;
+  left: 0px;
+  transform-origin: 0% 0% 0px;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+
+#webpageContainer #front:after {
+  z-index: 1000;
+}
+
+#webpageContainer #back {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  display: block;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transition: 1s;
+  opacity: 0;
+}
+
+#webpageContainer #background {
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  display: block;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  transition: 1s;
+  opacity: 0;
+}
+
+.opacityFadeIn {
+    opacity: 1 !important;
+}
+
+#webpageContainer #back:after {
+  z-index: -2;
+}
