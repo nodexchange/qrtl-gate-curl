@@ -160,7 +160,7 @@ com.adtech.MobileTemplate.FlipInterstitial.Advert.prototype = {
       if (filenameExt == 'jpg' || filenameExt == 'gif' || filenameExt == 'png') {
         var imgElement = document.createElement('img');
         imgElement.src = ADTECH.getFileUrl(this.advertSettings);
-        advertAssetContainer.appendChild(imgElement);
+        // advertAssetContainer.appendChild(imgElement);
         var _this = this;
         imgElement.style.cursor = 'pointer';
 				imgElement.style.width = 100 +'%';

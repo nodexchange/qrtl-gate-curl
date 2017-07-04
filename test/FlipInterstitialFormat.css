@@ -97,6 +97,7 @@ div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup
   transform: translate3d(0,0,0);
   transition: 1s;
   opacity: 0;
+  text-align: center;
 }
 
 #webpageContainer #background {

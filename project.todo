@@ -8,7 +8,8 @@ Gate Template:
     ☐ Responsiveness
     ☐ Verify https / http connection
     ☐ fix smaller steps for wallpaper
-    ☐ fix back main background width / height (match with local).
+    ✔ fix back main background width / height (match with local). @done (04/07/2017, 22:42:33)
+    ✔ adjust height of the advert to match rails. @done (04/07/2017, 22:30:12)
 
 TODO HINTS:
     New Task:

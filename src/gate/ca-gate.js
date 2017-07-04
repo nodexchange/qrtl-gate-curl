@@ -73,7 +73,8 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
                     parent: iframeContent.parentNode.toString()
                   });
                 } catch (e) {
-                  self.logMessage('manipulate error : ' + e.message);
+                  console.log('[ca-gate] manipulate error :' + e.message);
+                  // self.logMessage('manipulate error : ' + e.message);
                 }
               }
               
@@ -100,6 +101,8 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         var mainContainer = self.advert.getAssetContainer('main');
         if (mainContainer.div) {
           backDiv.appendChild(mainContainer.div);
+          mainContainer.div.removeAttribute('style');
+          mainContainer.div.style.marginTop = ((viewHeight / 2) - 200) + 'px';
         }
 
         var backgroundPage = targetWindow.document.createElement("div");
