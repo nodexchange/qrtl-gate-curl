@@ -2,7 +2,7 @@ define(function () {
   var WallpaperGetters = function () {};
   var targetWindow = {};
   WallpaperGetters.prototype = {
-    setup(main) {
+    setup: function(main) {
       this.main = main;
       this.advert = this.main.advert;
       targetWindow = main.targetWindow;
