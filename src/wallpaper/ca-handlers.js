@@ -262,6 +262,7 @@ define(function () {
 
     onWallpaperClick: function (e) {
       this.advert.eventBus.dispatchEvent('wallpaper-click');
+			this.trackGateOpen(this);		
       return
       // var ct = this.advert.contentProperties.wallpaper.clickthrough;
       // if (ct != '') {
@@ -272,12 +273,14 @@ define(function () {
     },
     onHeaderClick: function (e) {
       this.advert.eventBus.dispatchEvent('wallpaper-click');
+		this.trackGateOpen(this);	
       // this.advert.dynamicClick('Wallpaper', ct);         
       // var ct = this.advert.contentProperties.wallpaper.clickthrough;
       // this.loadFlipInterstitialCssFile();
     },
     onRailClick: function (e) {
       this.advert.eventBus.dispatchEvent('wallpaper-click');
+			this.trackGateOpen(this);	
       switch (e.target.id) {
         case 'oc-rail-left':
           // this.advert.eventBus.dispatchEvent('rail-left-click');
@@ -295,6 +298,12 @@ define(function () {
       this.msnDivStickyTog.classList = this.msnScrollEnabled ? 'enabled' : 'disabled';
       this.scrollHandler();
     },
+		trackGateOpen: function(scope) {
+			var self = scope;
+			setTimeout(function() {
+				self.advert.eventBus.dispatchEvent('gate-open');		
+			}, 3000);
+		},
     onAlignTog: function (e) {
       var alg = this.advert.contentProperties.wallpaper.alignment;
       alg = alg == 'center' ? 'left' : 'center';
