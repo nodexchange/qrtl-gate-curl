@@ -110,6 +110,7 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
 
         var gateBg = self.gateSettings;
         backgroundPage.style.background = '#ffffff url(' + gateBg + ') no-repeat 50% 0';
+        backgroundPage.style.backgroundSize = 'contain';
         backgroundPage.setAttribute('class', 'card-page');
         webpageContainer.appendChild(backgroundPage);
         self.backgroundPage = backgroundPage;

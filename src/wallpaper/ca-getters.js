@@ -17,7 +17,7 @@ define(function () {
       var msnHeadHeight = this.main.settings.msnHeadHeight;
       var msnHeadOffset = this.main.settings.msnHeadOffset;
       
-      var rh = msnWPHeight - 120; // 850
+      var rh = msnWPHeight; // 850
 
       s = s.concat('#main .sectioncontent:first-child .outeradcontainer{width:100%; padding-top: 30px; overflow: hidden;}'); //pushes down adchoice leader logo, hides overflow in 836px
       s = s.concat('#oc-header{background:' + wallpaperSettings.background + ';}');

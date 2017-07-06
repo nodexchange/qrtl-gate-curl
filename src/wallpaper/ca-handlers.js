@@ -31,7 +31,7 @@ define(function () {
 
       //allow support for custom height
       if (main.wallpaperSettings.height === undefined) {
-        main.wallpaperSettings.height = 954;
+        main.wallpaperSettings.height = 980;
       }
       main.settings.msnWPHeight = main.wallpaperSettings.height;
 

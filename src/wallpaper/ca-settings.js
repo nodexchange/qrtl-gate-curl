@@ -36,7 +36,7 @@ define(function () {
 
         msnStepId: -1,
         msnWPWidth: 1264,
-        msnWPHeight: 954,
+        msnWPHeight: 980,
         msnPreloadList: [0, 0, 0, 0, 0],
         msnPreloadCount: 0,
         msnSteps: [836, 942, 1152, 1264 /*, 1600*/ ],
