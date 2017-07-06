@@ -143,8 +143,9 @@ com.adtech.MobileTemplate.Util = {
   }
 };
 com.adtech.MobileTemplate.FlipInterstitial.Advert = function () {
-  this.advertSettings = ADTECH.getContent('Gate image or HTML file', "1366x76815.jpg");
+  this.advertSettings = ''; // A DTECH.g etCon tent('Gate image or HTML file', "1366x76815.jpg");
   var autoScale = ADTECH.getContent('Auto Scale Advert', "false");
+  this.closeButtonColor = ADTECH.getContent('Close Button Color', '#676767');
   this.advertAutoScale = (autoScale == 'true' || autoScale === true) ? true : false;
   this.init();
 };
@@ -178,13 +179,21 @@ com.adtech.MobileTemplate.FlipInterstitial.Advert.prototype = {
       }
     } else {
       var errorMsg = document.createElement('div');
-      errorMsg.innerHTML =
-        'Image Not Found - Error 404 '+filenameExt+'<br/>Please check Content > Panels Settings > Image File';
-      advertAssetContainer.appendChild(errorMsg);
+      errorMsg.innerHTML = '';
+      console.log('Image Not Found - Error 404 '+filenameExt+'<br/>Please check Content > Panels Settings > Image File');
+     // advertAssetContainer.appendChild(errorMsg);
     }
     // this.createCloseButton(flipInterstitialContainer);
     this.createVideoPlayer(flipInterstitialContainer);
+    this.updateCloseButton();
   },
+
+  updateCloseButton: function() {
+    var closeButton = document.getElementById('closeButton');
+    closeButton.style.background = this.closeButtonColor;
+    console.log('CLOSE BUTTON UPDATED' + this.closeButtonColor);
+  },
+
   loadFile: function (url) {
     var _self = this;
     var _url = url;
