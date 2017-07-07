@@ -21,16 +21,22 @@ define(function () {
       var frontPage = self.card.children[0];
       var backPage = self.card.children[1];
       var backgroundPage = self.card.children[2];
+      var backgrounCoverdPage = self.card.children[3];
       if (frontPage.className.indexOf('flipped') === -1) {
         setTimeout(function () {
           frontPage.className += ' flipPosition flipped';
           backgroundPage.className += ' opacityFadeIn';
           frontPage.style.pointerEvents = 'none';
         }, 500);
-          setTimeout(function() {
-            backPage.style.display = 'block';
-            backPage.className += ' opacityFadeIn';
-          }, 1200);
+
+         setTimeout(function () {
+          backgrounCoverdPage.className += ' opacityFadeIn';
+        }, 1500);
+
+        setTimeout(function() {
+          backPage.style.display = 'block';
+          backPage.className += ' opacityFadeIn';
+        }, 1200);
         console.log('[GATE] OPEN!!!!!!!!!');
         self.gate.updateMainDimensions(true);
         cards[0].style.overflow = 'hidden';
@@ -44,6 +50,7 @@ define(function () {
         frontPage.className = 'card-page';
         backPage.className = 'card-page';
         backgroundPage.className = 'card-page';
+        backgrounCoverdPage.className = 'card-page';
         frontPage.style.pointerEvents = 'auto';
         self.gate.updateMainDimensions(false);
 

@@ -251,7 +251,7 @@ com.adtech.MobileTemplate.FlipInterstitial.Advert.prototype = {
     return img;
   },
   createVideoPlayer: function(container) {
-    var videoSettings = ADTECH.getContent('Video Player', {top:20, left:20, 'video mp4':'stock.mp4', 'video webm': '.webm', 'width': 500, height: 300, 'size settings':'px||%', autoplay:true, poster:'poster.jpg' });
+    var videoSettings = ADTECH.getContent('Video Player', {top:30, left:20, 'video mp4':'stock.mp4', 'video webm': '.webm', 'width': 500, height: 300, 'size settings':'px||%', autoplay:true, poster:'poster.jpg' });
     var svpContainer = document.createElement('div');
     svpContainer.className = 'svpContainer';
     container.appendChild(svpContainer);
@@ -265,6 +265,15 @@ com.adtech.MobileTemplate.FlipInterstitial.Advert.prototype = {
       svpContainer.style.top = videoSettings['top'] + '%'
       svpContainer.style.left = videoSettings['left'] + '%'; 
     }
+    var videoClickDone = false;
+    svpContainer.style.cursor = 'pointer';
+    svpContainer.addEventListener('click', function(){
+      if (!videoClickDone) {
+        ADTECH.click('Video Click');
+        videoClickDone = true;
+      }
+    });
+
     var smartPlayer;
 		ADTECH.addEventListener('pause_video_player', function() {
 			smartPlayer.pause();

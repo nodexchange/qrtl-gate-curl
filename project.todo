@@ -5,9 +5,15 @@ Gate Template:
     ✔ fix ca-utils getFileUrl @done (04/07/2017, 11:45:02)
     ✔ content value for background image @done (04/07/2017, 00:11:32)
     ☐ fix issue with the adConfig failing to render main.
-    ☐ Responsiveness
-    ☐ Verify https / http connection
-    ☐ fix smaller steps for wallpaper
+    ☐ Responsiveness.
+    ☐ Verify https / http connection.
+    ☐ fix smaller steps for wallpaper.
+    ☐ video position on different browsers.
+    ✔ move close button closer to video @done (07/07/2017, 00:32:58)
+    ✔ recommendation for background below the fold @done (07/07/2017, 00:45:25)
+    ✔ firefox / ie different value for gate open transition @done (07/07/2017, 11:00:06)
+    ✔ delay opacity. @done (07/07/2017, 11:06:22)
+
     ✔ fix back main background width / height (match with local). @done (04/07/2017, 22:42:33)
     ✔ adjust height of the advert to match rails. @done (04/07/2017, 22:30:12)
 

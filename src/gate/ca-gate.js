@@ -97,6 +97,7 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         backDiv.setAttribute('id', 'back');
         backDiv.setAttribute('class', 'card-page');
         webpageContainer.appendChild(backDiv);
+        self.backDiv = backDiv;
 
         var mainContainer = self.advert.getAssetContainer('main');
         if (mainContainer.div) {
@@ -109,13 +110,23 @@ define(['gate/ca-listeners', 'gate/ca-builders', 'gate/ca-transitions', 'gate/ca
         backgroundPage.id = 'background';
 
         var gateBg = self.gateSettings;
-        backgroundPage.style.background = '#ffffff url(' + gateBg + ') no-repeat 50% 0';
+        backgroundPage.style.background = 'url(' + gateBg + ') no-repeat 50% 0';
         backgroundPage.style.backgroundSize = 'contain';
         backgroundPage.setAttribute('class', 'card-page');
         webpageContainer.appendChild(backgroundPage);
         self.backgroundPage = backgroundPage;
 
+
+        var backgroundPageCover = targetWindow.document.createElement("div");
+        backgroundPageCover.id = 'backgroundCover';
+        backgroundPageCover.style.background = 'url(' + gateBg + ') no-repeat 50% 0';
+        backgroundPageCover.style.backgroundSize = 'cover';
+        backgroundPageCover.setAttribute('class', 'card-page');
+        webpageContainer.appendChild(backgroundPageCover);
+        self.backgroundCoverPage = backgroundPageCover;
+
         self.transitions.initTransition(); // transition;
+        self.listeners.assignClickHandlers();
         self.pageDomUpdated = true;
       },
 

@@ -9,11 +9,22 @@ define(function () {
     assignListeners: function () {
       this.advert.eventBus.addEventListener('wallpaper-click', this.wallpaperClickHandler.bind(this));
       this.advert.eventBus.addEventListener('close_advert', this.closeHandler.bind(this));
+    },
 
+    assignClickHandlers: function() {
+      this.gate.backgroundPage.addEventListener('click', this.gateBackgroundClickHandler.bind(this));
+      this.gate.backDiv.addEventListener('click', this.gateBackgroundClickHandler.bind(this));
     },
 
     wallpaperClickHandler: function () {
       this.gate.loadFiles();
+    },
+
+    gateBackgroundClickHandler: function() {
+      var ct = this.advert.contentProperties.wallpaper.clickthrough;
+      if (ct != '') {
+        this.advert.dynamicClick('Background', ct);
+      }
     },
 
     closeHandler: function () {
@@ -23,6 +34,10 @@ define(function () {
        */
       // clearTimeout(this.flipTimer1);
       // clearTimeout(this.flipTimer2);
+    },
+
+    clickReferences: function() {
+      // ADTECH.dynamicClick('Background');
     }
   };
 
