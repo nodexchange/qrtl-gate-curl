@@ -66,7 +66,7 @@ define(function () {
       var targetMain = msnPreviewMode ? targetDoc.body : targetDoc.getElementById('main');
 
       //BUILD LOGOS
-      this.main.buildLogos(this.advert.contentProperties.logos);
+      // this.main.buildLogos(this.advert.contentProperties.logos);
 
       //INTERACTIVE
       var flipAction = this.main.flipAction;
@@ -184,6 +184,9 @@ define(function () {
       main.msnDivRailR.style.top = topRails + 'px';
       //POSITION HEADER AND RAIL LEFT
       var leftOffset = -((main.settings.msnWPWidth / 2) - (clientW / 2));
+      if (main.settings.msnWPWidth > clientW) {
+        leftOffset = 0;
+      }
       if (main.settings.msnPlacement == 'fcom') xHeader = xRailL;
       main.msnDivHeader.style.left = main.helpers.getPX(leftOffset + xHeader);
       main.msnDivRailL.style.left = main.helpers.getPX(leftOffset + xRailL);
@@ -212,7 +215,7 @@ define(function () {
 
 
       //UPDATE LOGO POSITION
-      main.updateLogos();
+      // main.updateLogos();
 
       // Fix rails 
       if (main.settings.msnRailsFixed) {

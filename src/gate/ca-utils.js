@@ -3,19 +3,26 @@ define(function () {
     this.gate = gate;
     this.advert = gate.advert;
     this.targetWindow = gate.targetWindow;
+    this.loadFileCallback = {};
   };
 
   Utils.prototype = {
 
     loadFlipInterstitialCssFile: function (callback, scope) {
       if (!this.advert.getAssetContainer('main').rendered) {
+        this.loadFileCallback = callback;
+        this.advert.addEventListener('render', this.renderHandler.bind(this));
         this.advert.getAssetContainer('main').render();
-        this.gate.builders.buildBackground();
+      } else {
+        this.startFileLoad(callback, scope);
       }
+    },
+
+    startFileLoad: function(callback, scope) {
       var styleCssUrl = this.getFileUrl('FlipInterstitialFormat.css');
-      console.log(styleCssUrl);
       var self = this;
       if (!self.gate.pageDomUpdated) {
+        self.gate.builders.buildBackground();
         self.loadJsCssFile(styleCssUrl, 'css', self.gate.manipulateDom, self.gate);
       } else {
         callback(scope);
@@ -70,6 +77,10 @@ define(function () {
     getFileUrl: function(fileName) {
       // return 'http://localhost:3000/src/' + fileName;
       return this.advert.getFileUrl(fileName);
+    },
+    renderHandler: function(e) {
+      console.log('>>> RENDER >>> DONE');
+      this.startFileLoad(this.loadFileCallback, this);
     }
   };
 

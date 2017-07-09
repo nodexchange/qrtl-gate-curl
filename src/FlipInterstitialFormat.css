@@ -114,11 +114,11 @@ div,form,blockquote,article,aside,details,figcaption,figure,footer,header,hgroup
 }
 
 #webpageContainer #backgroundCover {
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
+  -webkit-filter: blur(9px);
+  -moz-filter: blur(9px);
+  -o-filter: blur(9px);
+  -ms-filter: blur(9px);
+  filter: blur(9px);
   top: 0px;
   left: 0px;
   display: block;

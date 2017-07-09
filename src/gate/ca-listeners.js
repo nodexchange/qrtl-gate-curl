@@ -21,7 +21,7 @@ define(function () {
     },
 
     gateBackgroundClickHandler: function() {
-      var ct = this.advert.contentProperties.wallpaper.clickthrough;
+      var ct = this.advert.contentProperties['Clickthrough URL'];
       if (ct != '') {
         this.advert.dynamicClick('Background', ct);
       }

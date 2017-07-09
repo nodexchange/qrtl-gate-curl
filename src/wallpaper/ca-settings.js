@@ -45,9 +45,9 @@ define(function () {
 
     var ADTECHEventsDefinitions = function () {
         //content -- height:754||815, logo_cap:auto
-        ADTECH.getContent('wallpaper', '{main:".jpg",placement:"default||fcom",logo_cap:"none||836||942||1152||1264",alignment:"center||left",clickthrough:"",background:"#ffffff",custom_css:"",debug:false, fixed_rails:"true"}');
+        ADTECH.getContent('wallpaper', '{main:".jpg",placement:"default||fcom",logo_cap:"none||836||942||1152||1264",alignment:"center||left",background:"#ffffff",custom_css:"",debug:false, fixed_rails:"true"}');
         ADTECH.getContent('steps', '{step_836:"1264x754_Skin_AOL.jpg",step_942:"1264x754_Skin_AOL.jpg",step_1152:"1264x754_Skin_AOL.jpg",step_1264:"1264x754_Skin_AOL.jpg",step_1600:"1264x754_Skin_AOL.jpg"}');
-        ADTECH.getContent('logos', '[{img:".png",pos:"left||right||center",width:0,height:0,offset_x:0,offset_y:0,fixed:false}]');
+        // AD TECH.getConte nt('logos', '[{img:".png",pos:"left||right||center",width:0,height:0,offset_x:0,offset_y:0,fixed:false}]');
 
         //events
         ADTECH.event('wallpaper-click');

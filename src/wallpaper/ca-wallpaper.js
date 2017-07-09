@@ -147,6 +147,7 @@ define(['wallpaper/ca-settings', 'wallpaper/ca-handlers', 'wallpaper/ca-helpers'
 
         //update wallpaper width
         this.msnWPWidth = urlStep != '' ? stepW : 1600;
+        this.settings.msnWPWidth = this.msnWPWidth;
 
         //override 
         if (override != null) {
